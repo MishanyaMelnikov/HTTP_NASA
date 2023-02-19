@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class HttpClient {
-    public static final ObjectMapper mapper = new ObjectMapper();
+    public static ObjectMapper mapper = new ObjectMapper();
     public static void dataRequest() throws IOException {
 
         CloseableHttpClient httpClient = HttpClientBuilder.create()
